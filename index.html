@@ -28,7 +28,21 @@
         .linkedin-icon {
             width: 20px;
             height: 20px;
+            display: inline-block; /* Ensures the icon is displayed inline */
+            background-image: url('https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-indent: -9999px; /* Hide the text */
+            overflow: hidden;
+            vertical-align: middle; /* Center the icon vertically */
         }
+
+        .linkedin-icon a {
+            display: inline-block; /* Allow the link to be clickable */
+            width: 20px; /* Set the width and height to match the icon size */
+            height: 20px;
+        }
+
         /* Add more CSS styles for your projects and contact section as needed */
     </style>
 </head>
@@ -64,10 +78,8 @@
         <p>Email: evansphillips@berkeley.edu</p>
         <p>
             LinkedIn:
-             <a href="https://www.linkedin.com/in/evansphillips" target="_blank">linkedin.com/in/evansphillips
-                <img src="https://www.keesingtechnologies.com/wp-content/uploads/2018/07/Linkedin-Icon.png" alt="LinkedIn Profile" class="linkedin-icon">
-             </a>
-            </p>
+            <span class="linkedin-icon"><a href="https://www.linkedin.com/in/evansphillips" target="_blank" aria-label="LinkedIn Profile"></a></span>
+        </p>
         <!-- Add additional contact information as needed -->
     </section>
 </body>
